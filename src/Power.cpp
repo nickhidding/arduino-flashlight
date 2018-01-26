@@ -96,7 +96,7 @@ void Power::readVoltage()
 		// voltage multiplied by 11 when using voltage divider that
 		// divides by 11. 10.860 is the calibrated voltage divide
 		// value
-		inputVoltage = inputVoltage * 11.900;
+		inputVoltage = inputVoltage * 11.150;
 		// Reset
 		analogVoltageSampleCount = 0;
 		analogVoltageSum = 0;

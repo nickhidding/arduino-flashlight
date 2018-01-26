@@ -68,7 +68,7 @@ void Display::updateScreen()
 
 		// Update voltage
 		if (this->encoderSteps != 0) {
-			this->fan->setSpeedPercentage(this->fan->getSpeedPercentage() + this->encoderSteps);
+			this->fan->setSpeedPercentage(this->fan->getSpeedPercentage() + (this->encoderSteps * 10));
 			this->encoderSteps = 0;
 		}
 
